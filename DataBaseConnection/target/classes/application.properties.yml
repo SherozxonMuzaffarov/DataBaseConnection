@@ -1,0 +1,72 @@
+#spring:
+#  profile:
+#    active:qa
+#
+#---
+#
+#spring:
+#  profile:dev
+#  datasource:
+#    username: postgres
+#    url: jdbc:postgresql://localhost:5432/ples?useSSl=false&serverTimezone=UTC&useLegalcyDatatimeCode=false
+#    password: root
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#    hibernate:
+#      ddl-auto: create
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        type: DEBUG
+#        SQL: DEBUG
+#---
+#
+#spring:
+#  profile:qa
+#  datasource:
+#    username: postgres
+#    url: jdbc:postgresql://localhost:5432/ples-qa?useSSl=false&serverTimezone=UTC&useLegalcyDatatimeCode=false
+#    password: root
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#    hibernate:
+#      ddl-auto: create
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        type: DEBUG
+#        SQL: DEBUG
+#
+#---
+#
+#spring:
+#  profile:prod
+#  datasource:
+#    username: postgres
+#    url: jdbc:postgresql://localhost:5432/ples-prod?useSSl=false&serverTimezone=UTC&useLegalcyDatatimeCode=false
+#    password: root
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#    hibernate:
+#      ddl-auto: create
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        type: DEBUG
+#        SQL: DEBUG
+
+#actuatorniki
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include="*"
